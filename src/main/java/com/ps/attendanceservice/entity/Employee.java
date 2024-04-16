@@ -16,13 +16,19 @@ import java.util.Objects;
 @Table(name = "users")
 public class Employee {
 
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "swipe_id")
+    private Integer swipeId;
+
     @Column(name = "employee_id")
-    private Long employeeId;
+    private Integer employeeId;
 
     @Column(name = "swipe_counts")
-    private Long swipeCounts;
+    private Integer swipeCounts;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "swipe_type")
     private SwipeType swipeType;
 

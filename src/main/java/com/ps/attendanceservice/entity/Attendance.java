@@ -17,9 +17,8 @@ import java.time.LocalTime;
 public class Attendance {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "employee_id")
-    private Long employeeId;
+    private Integer employeeId;
 
     @Column(name = "attendance_date")
     private LocalDate attendanceDate;

@@ -1,9 +1,8 @@
 package com.ps.attendanceservice.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Objects;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,8 +10,9 @@ import java.util.Objects;
 @Setter
 @ToString
 public class EmployeeDTO {
-    private Long employeeId;
-    private Long swipeCounts;
+    private Integer swipeId;
+    private Integer employeeId;
+    private Integer swipeCounts;
     private SwipeType swipeType;
-    private Long swipeTimestamp;
+    private LocalDateTime swipeTimestamp;
 }
