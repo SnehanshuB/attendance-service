@@ -12,7 +12,7 @@ import java.time.LocalTime;
 @Setter
 @ToString
 public class AttendanceDTO {
-    private Long employeeId;
+    private Integer employeeId;
     private LocalDate attendanceDate;
     private LocalTime loggedHours;
     private AttendanceStatus attendanceStatus;
